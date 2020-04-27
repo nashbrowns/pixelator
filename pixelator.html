@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Pixelator CSS -->
+    <link rel="stylesheet" href="pixelator.css">
+    <!-- Color Picker CSS -->
+    <link href="color-picker.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pixelator</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"> </ul>
+        </div>
+    </nav>
+
+    <!-- Pixel Array -->
+    <div class="array align-middle">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED15" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED14" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED13" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED12" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED11" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED10" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED9" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED8" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED7" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED6" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED5" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED4" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED3" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED2" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED1" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED0" onclick="SelectLED(this.id)"></button></div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED16" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED17" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED18" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED19" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED20" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED21" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED22" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED23" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED24" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED25" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED26" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED27" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED28" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED29" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED30" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED31" onclick="SelectLED(this.id)"></button></div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED47" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED46" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED45" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED44" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED43" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED42" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED41" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED40" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED39" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED38" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED37" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED36" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED35" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED34" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED33" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED32" onclick="SelectLED(this.id)"></button></div>
+        </div>
+        <!-- Row 4 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED48" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED49" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED50" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED51" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED52" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED53" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED54" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED55" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED56" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED57" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED58" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED59" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED60" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED61" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED62" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED63" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED79" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED78" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED77" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED76" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED75" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED74" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED73" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED72" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED71" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED70" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED69" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED68" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED67" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED66" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED65" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED64" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED80" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED81" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED82" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED83" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED84" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED85" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED86" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED87" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED88" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED89" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED90" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED91" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED92" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED93" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED94" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED95" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED111" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED110" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED109" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED108" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED107" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED106" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED105" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED104" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED103" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED102" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED101" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED100" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED99" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED98" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED97" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED96" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 8 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED112" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED113" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED114" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED115" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED116" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED117" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED118" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED119" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED120" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED121" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED122" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED123" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED124" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED125" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED126" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED127" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 9 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED143" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED142" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED141" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED140" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED139" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED138" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED137" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED136" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED135" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED134" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED133" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED132" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED131" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED130" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED129" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED128" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 10 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED144" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED145" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED146" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED147" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED148" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED149" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED150" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED151" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED152" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED153" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED154" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED155" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED156" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED157" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED158" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED159" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 11 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED175" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED174" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED173" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED172" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED171" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED170" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED169" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED168" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED167" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED166" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED165" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED164" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED163" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED162" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED161" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED160" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 12 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED176" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED177" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED178" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED179" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED180" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED181" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED182" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED183" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED184" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED185" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED186" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED187" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED188" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED189" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED190" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED191" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 13 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED207" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED206" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED205" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED204" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED203" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED202" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED201" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED200" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED199" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED198" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED197" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED196" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED195" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED194" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED193" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED192" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 14 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED208" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED209" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED210" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED211" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED212" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED213" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED214" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED215" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED216" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED217" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED218" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED219" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED220" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED221" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED222" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED223" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 15 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED239" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED238" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED237" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED236" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED235" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED234" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED233" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED232" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED231" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED230" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED229" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED228" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED227" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED226" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED225" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED224" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+        <!-- Row 16 -->
+        <div class="row">
+            <div class="col px-0 mx-0"><button class="box border" id="LED240" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED241" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED242" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED243" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED244" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED245" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED246" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED247" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED248" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED249" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED250" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED251" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED252" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED253" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED254" onclick="SelectLED(this.id)"></button></div>
+            <div class="col px-0 mx-0"><button class="box border" id="LED255" onclick="SelectLED(this.id)"></button></div>
+        </div>
+
+    </div>
+
+    <!-- Color Swatch -->
+    <div id="colorSwatch">
+        <form class="form-inline my-2 my-lg-0"
+            style="align-self: center; position: relative; top: 75px; left: 15px; width: 50%;">
+            <input type="text" id="colorSelect" value="#000000" />
+        </form>
+    </div>
+
+    <button type="button" id="genCode" class="btn btn-dark" onclick="genCode()">Generate Code</button>
+
+
+    <!-- Code Body -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" id="codeBody">
+        </div>
+    </div>
+
+
+    <!-- Bootsrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Color-Picker JS-->
+    <script src="color-picker.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        var picker = new CP(document.querySelector('input[type="text"]'));
+
+
+        function SelectLED(ID) {
+            console.log(ID);
+            console.log(picker.get());
+            var color = "rgb(" + picker.get()[0] + "," + picker.get()[1] + "," + picker.get()[2] + ")"
+            $("#" + ID).css('background', color);
+        }
+
+        function onChange(r, g, b, a) {
+            this.source.value = this.color(r, g, b, a);
+            var color = "rgb(" + picker.get()[0] + "," + picker.get()[1] + "," + picker.get()[2] + ")"
+            $('#colorSwatch').css('background-color', color);
+            for (i = 1; i < 17; i++) {
+                console.log("LED" + [i] + ":" + $('#LED' + [i]).css('background-color'));
+            }
+
+        }
+
+        function genCode() {
+            /* GPIO definitions */
+            $('#codeBody').empty();
+            $('#codeBody').append('<p>import time<p>');
+            $('#codeBody').append('<p>import board<p>');
+            $('#codeBody').append('<p>import neopixel<p>');
+            $('#codeBody').append('<p>import neopixel<p>');
+            $('#codeBody').append('<p>pixel_pin = board.D18<p>');
+            $('#codeBody').append('<p>num_pixels = 256<p>');
+            $('#codeBody').append('<p>ORDER = neopixel.GRB<p>');
+            $('#codeBody').append("<p>pixels = neopixel.NeoPixel\(<p>");
+            $('#codeBody').append("<p>&nbsp;&nbsp;&nbsp;&nbsp;pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER<p>");
+            $('#codeBody').append("\)<p>");
+
+            /* Row 1 */
+            $('#codeBody').append('<p>' + "pixels[0]=" + $('#LED0').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[1]=" + $('#LED1').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[2]=" + $('#LED2').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[3]=" + $('#LED3').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[4]=" + $('#LED4').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[5]=" + $('#LED5').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[6]=" + $('#LED6').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[7]=" + $('#LED7').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[8]=" + $('#LED8').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[9]=" + $('#LED9').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[10]=" + $('#LED10').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[11]=" + $('#LED11').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[12]=" + $('#LED12').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[13]=" + $('#LED13').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[14]=" + $('#LED14').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[15]=" + $('#LED15').css('background-color').slice(3) + '<p>');
+
+            /* Row 2 */
+            $('#codeBody').append('<p>' + "pixels[16]=" + $('#LED16').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[17]=" + $('#LED17').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[18]=" + $('#LED18').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[19]=" + $('#LED19').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[20]=" + $('#LED20').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[21]=" + $('#LED21').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[22]=" + $('#LED22').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[23]=" + $('#LED23').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[24]=" + $('#LED24').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[25]=" + $('#LED25').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[26]=" + $('#LED26').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[27]=" + $('#LED27').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[28]=" + $('#LED28').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[29]=" + $('#LED29').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[30]=" + $('#LED30').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[31]=" + $('#LED31').css('background-color').slice(3) + '<p>');
+
+            /* Row 3 */
+            $('#codeBody').append('<p>' + "pixels[32]=" + $('#LED32').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[33]=" + $('#LED33').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[34]=" + $('#LED34').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[35]=" + $('#LED35').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[36]=" + $('#LED36').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[37]=" + $('#LED37').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[38]=" + $('#LED38').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[39]=" + $('#LED39').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[40]=" + $('#LED40').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[41]=" + $('#LED41').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[42]=" + $('#LED42').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[43]=" + $('#LED43').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[44]=" + $('#LED44').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[45]=" + $('#LED45').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[46]=" + $('#LED46').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[47]=" + $('#LED47').css('background-color').slice(3) + '<p>');
+
+            /* Row 4 */
+            $('#codeBody').append('<p>' + "pixels[48]=" + $('#LED48').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[49]=" + $('#LED49').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[50]=" + $('#LED50').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[51]=" + $('#LED51').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[52]=" + $('#LED52').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[53]=" + $('#LED53').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[54]=" + $('#LED54').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[55]=" + $('#LED55').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[56]=" + $('#LED56').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[57]=" + $('#LED57').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[58]=" + $('#LED58').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[59]=" + $('#LED59').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[60]=" + $('#LED60').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[61]=" + $('#LED61').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[62]=" + $('#LED62').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[63]=" + $('#LED63').css('background-color').slice(3) + '<p>');
+
+            /* Row 5 */
+            $('#codeBody').append('<p>' + "pixels[64]=" + $('#LED64').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[65]=" + $('#LED65').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[66]=" + $('#LED66').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[67]=" + $('#LED67').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[68]=" + $('#LED68').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[69]=" + $('#LED69').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[70]=" + $('#LED70').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[71]=" + $('#LED71').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[72]=" + $('#LED72').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[73]=" + $('#LED73').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[74]=" + $('#LED74').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[75]=" + $('#LED75').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[76]=" + $('#LED76').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[77]=" + $('#LED77').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[78]=" + $('#LED78').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[79]=" + $('#LED79').css('background-color').slice(3) + '<p>');
+
+            /* Row 6 */
+            $('#codeBody').append('<p>' + "pixels[80]=" + $('#LED80').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[81]=" + $('#LED81').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[82]=" + $('#LED82').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[83]=" + $('#LED83').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[84]=" + $('#LED84').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[85]=" + $('#LED85').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[86]=" + $('#LED86').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[87]=" + $('#LED87').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[88]=" + $('#LED88').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[89]=" + $('#LED89').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[90]=" + $('#LED90').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[91]=" + $('#LED91').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[92]=" + $('#LED92').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[93]=" + $('#LED93').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[94]=" + $('#LED94').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[95]=" + $('#LED95').css('background-color').slice(3) + '<p>');
+
+            /* Row 7 */
+            $('#codeBody').append('<p>' + "pixels[96]=" + $('#LED96').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[97]=" + $('#LED97').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[98]=" + $('#LED98').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[99]=" + $('#LED99').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[100]=" + $('#LED100').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[101]=" + $('#LED101').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[102]=" + $('#LED102').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[103]=" + $('#LED103').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[104]=" + $('#LED104').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[105]=" + $('#LED105').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[106]=" + $('#LED106').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[107]=" + $('#LED107').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[108]=" + $('#LED108').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[109]=" + $('#LED109').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[110]=" + $('#LED110').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[111]=" + $('#LED111').css('background-color').slice(3) + '<p>');
+
+            /* Row 8 */
+            $('#codeBody').append('<p>' + "pixels[112]=" + $('#LED112').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[113]=" + $('#LED113').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[114]=" + $('#LED114').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[115]=" + $('#LED115').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[116]=" + $('#LED116').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[117]=" + $('#LED117').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[118]=" + $('#LED118').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[119]=" + $('#LED119').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[120]=" + $('#LED120').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[121]=" + $('#LED121').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[122]=" + $('#LED122').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[123]=" + $('#LED123').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[124]=" + $('#LED124').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[125]=" + $('#LED125').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[126]=" + $('#LED126').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[127]=" + $('#LED127').css('background-color').slice(3) + '<p>');
+            
+            /* Row 9 */
+            $('#codeBody').append('<p>' + "pixels[128]=" + $('#LED128').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[129]=" + $('#LED129').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[130]=" + $('#LED130').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[131]=" + $('#LED131').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[132]=" + $('#LED132').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[133]=" + $('#LED133').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[134]=" + $('#LED134').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[135]=" + $('#LED135').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[136]=" + $('#LED136').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[137]=" + $('#LED137').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[138]=" + $('#LED138').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[139]=" + $('#LED139').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[140]=" + $('#LED140').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[141]=" + $('#LED141').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[142]=" + $('#LED142').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[143]=" + $('#LED143').css('background-color').slice(3) + '<p>');
+
+            /* Row 10 */
+            $('#codeBody').append('<p>' + "pixels[144]=" + $('#LED144').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[145]=" + $('#LED145').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[146]=" + $('#LED146').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[147]=" + $('#LED147').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[148]=" + $('#LED148').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[149]=" + $('#LED149').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[150]=" + $('#LED150').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[151]=" + $('#LED151').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[152]=" + $('#LED152').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[153]=" + $('#LED153').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[154]=" + $('#LED154').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[155]=" + $('#LED155').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[156]=" + $('#LED156').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[157]=" + $('#LED157').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[158]=" + $('#LED158').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[159]=" + $('#LED159').css('background-color').slice(3) + '<p>');
+
+            /* Row 11 */
+            $('#codeBody').append('<p>' + "pixels[160]=" + $('#LED160').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[161]=" + $('#LED161').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[162]=" + $('#LED162').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[163]=" + $('#LED163').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[164]=" + $('#LED164').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[165]=" + $('#LED165').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[166]=" + $('#LED166').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[167]=" + $('#LED167').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[168]=" + $('#LED168').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[169]=" + $('#LED169').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[170]=" + $('#LED170').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[171]=" + $('#LED171').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[172]=" + $('#LED172').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[173]=" + $('#LED173').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[174]=" + $('#LED174').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[175]=" + $('#LED175').css('background-color').slice(3) + '<p>');
+
+            /* Row 12 */
+            $('#codeBody').append('<p>' + "pixels[176]=" + $('#LED176').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[177]=" + $('#LED177').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[178]=" + $('#LED178').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[179]=" + $('#LED179').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[180]=" + $('#LED180').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[181]=" + $('#LED181').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[182]=" + $('#LED182').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[183]=" + $('#LED183').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[184]=" + $('#LED184').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[185]=" + $('#LED185').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[186]=" + $('#LED186').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[187]=" + $('#LED187').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[188]=" + $('#LED188').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[189]=" + $('#LED189').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[190]=" + $('#LED190').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[191]=" + $('#LED191').css('background-color').slice(3) + '<p>');
+
+            /* Row 13 */
+            $('#codeBody').append('<p>' + "pixels[192]=" + $('#LED192').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[193]=" + $('#LED193').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[194]=" + $('#LED194').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[195]=" + $('#LED195').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[196]=" + $('#LED196').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[197]=" + $('#LED197').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[198]=" + $('#LED198').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[199]=" + $('#LED199').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[200]=" + $('#LED200').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[201]=" + $('#LED201').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[202]=" + $('#LED202').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[203]=" + $('#LED203').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[204]=" + $('#LED204').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[205]=" + $('#LED205').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[206]=" + $('#LED206').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[207]=" + $('#LED207').css('background-color').slice(3) + '<p>');
+
+            /* Row 14 */
+            $('#codeBody').append('<p>' + "pixels[208]=" + $('#LED208').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[209]=" + $('#LED209').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[210]=" + $('#LED210').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[211]=" + $('#LED211').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[212]=" + $('#LED212').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[213]=" + $('#LED213').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[214]=" + $('#LED214').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[215]=" + $('#LED215').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[216]=" + $('#LED216').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[217]=" + $('#LED217').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[218]=" + $('#LED218').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[219]=" + $('#LED219').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[220]=" + $('#LED220').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[221]=" + $('#LED221').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[222]=" + $('#LED222').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[223]=" + $('#LED223').css('background-color').slice(3) + '<p>');
+
+            /* Row 15 */
+            $('#codeBody').append('<p>' + "pixels[224]=" + $('#LED224').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[225]=" + $('#LED225').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[226]=" + $('#LED226').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[227]=" + $('#LED227').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[228]=" + $('#LED228').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[229]=" + $('#LED229').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[230]=" + $('#LED230').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[231]=" + $('#LED231').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[232]=" + $('#LED232').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[233]=" + $('#LED233').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[234]=" + $('#LED234').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[235]=" + $('#LED235').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[236]=" + $('#LED236').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[237]=" + $('#LED237').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[238]=" + $('#LED238').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[239]=" + $('#LED239').css('background-color').slice(3) + '<p>');
+
+            /* Row 16 */
+            $('#codeBody').append('<p>' + "pixels[240]=" + $('#LED240').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[241]=" + $('#LED241').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[242]=" + $('#LED242').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[243]=" + $('#LED243').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[244]=" + $('#LED244').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[245]=" + $('#LED245').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[246]=" + $('#LED246').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[247]=" + $('#LED247').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[248]=" + $('#LED248').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[249]=" + $('#LED249').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[250]=" + $('#LED250').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[251]=" + $('#LED251').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[252]=" + $('#LED252').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[253]=" + $('#LED253').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[254]=" + $('#LED254').css('background-color').slice(3) + '<p>');
+            $('#codeBody').append('<p>' + "pixels[255]=" + $('#LED255').css('background-color').slice(3) + '<p>');
+
+            /* Display LEDs */
+            $('#codeBody').append("<p>pixels.show()<p>");
+
+
+        }
+
+        picker.on('change', onChange);
+        console.log(picker.get());
+
+
+    </script>
+
+</body>
+
+</html>
